@@ -10,6 +10,7 @@
 </template>
 
 <script>
+
     export default {
         name: "TabBar",
         data() {
@@ -21,5 +22,5 @@
 </script>
 
 <style scoped lang="sass">
-    @import "tabBar.sass"
+    @import "../../style/tabBar/tabBar"
 </style>

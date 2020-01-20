@@ -1,19 +1,20 @@
 <template>
   <div id="app">
-    <Home msg="Welcome to Your Vue.js App"/>
+    <nar-bar/>
+    <router-view/>
     <tab-bar/>
   </div>
 
 </template>
 
 <script>
-import Home from './components/home/home.vue'
 import TabBar from "./components/tabBar/tabBar";
+import NarBar from "./components/tabHader/narBar";
 
 export default {
   name: 'app',
   components: {
-    Home,
+    NarBar,
     TabBar
   }
 }

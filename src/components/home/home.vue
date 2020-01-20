@@ -1,15 +1,36 @@
 <template>
     <div>
-        <van-button type="primary">默认按钮</van-button>
-        <button>确定</button>
+        <swipe/>
+        <van-row type="flex" justify="space-around">
+
+            <van-col span="22" >
+                <div class="cmrs-division"></div>
+                <home-sort/>
+                <recommend/>
+
+            </van-col>
+        </van-row>
+
     </div>
 </template>
 
 <script>
+    import swipe from "./template/swipe";
+    import homeSort from "./template/homeSort";
+    import recommend from "./template/recommend";
     export default {
-        name: "Home"
+        name: "Home",
+        components: {
+            swipe,
+            homeSort,
+            recommend,
+        },
+
     }
 </script>
-<style scoped>
-
+<style scoped lang="sass">
+    @import "../../style/home/home"
+    .cmrs-division
+        width: 100vw
+        height: 1vh
 </style>
