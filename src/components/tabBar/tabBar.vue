@@ -1,10 +1,18 @@
 <template>
     <div class="cmrs-tabbar">
         <van-tabbar v-model="active">
-            <van-tabbar-item icon="home-o">首页</van-tabbar-item>
-            <van-tabbar-item icon="search">歌单</van-tabbar-item>
-            <van-tabbar-item icon="friends-o">播放</van-tabbar-item>
-            <van-tabbar-item icon="setting-o">我的</van-tabbar-item>
+            <router-link :to="{path:'/'}">
+                <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+            </router-link>
+            <router-link :to="{path:'/songSheet',query:{songId:3026816798}}">
+                <van-tabbar-item icon="search">歌单</van-tabbar-item>
+            </router-link>
+            <router-link :to="{path:'/player'}">
+                <van-tabbar-item icon="friends-o">播放</van-tabbar-item>
+            </router-link>
+            <router-link :to="{path:'/PersonalCenter'}">
+                <van-tabbar-item icon="setting-o">我的</van-tabbar-item>
+            </router-link>
         </van-tabbar>
     </div>
 </template>

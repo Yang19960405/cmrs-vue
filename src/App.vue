@@ -19,5 +19,10 @@ export default {
   }
 }
 </script>
+<style lang="sass">
+  #app
+    width: 100vw
+
+</style>
 
 

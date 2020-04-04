@@ -40,7 +40,7 @@
                 this.navbarshow===false?this.navbarshow=true:this.navbarshow=false;
             },
             onClickRight() {
-                window.console.log('返回');
+
             },
 
         }

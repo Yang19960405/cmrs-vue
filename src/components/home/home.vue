@@ -7,7 +7,7 @@
                 <div class="cmrs-division"></div>
                 <home-sort/>
                 <recommend/>
-
+                <top-music/>
             </van-col>
         </van-row>
 
@@ -18,12 +18,14 @@
     import swipe from "./template/swipe";
     import homeSort from "./template/homeSort";
     import recommend from "./template/recommend";
+    import topMusic from "./template/topMusic";
     export default {
         name: "Home",
         components: {
             swipe,
             homeSort,
             recommend,
+            topMusic,
         },
 
     }
